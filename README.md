@@ -10,13 +10,17 @@ cmake --build .
 ```
 
 ## Ubuntu Linux build commands
+```
 mkdir -p build
 cd build
 cmake ..
 cmake --build .
+```
 
 ## Docker commands
+```
 docker build . -t c_build
 docker-compose up
 docker-compose exec yas bash
+```
 
