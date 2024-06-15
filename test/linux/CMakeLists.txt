@@ -9,7 +9,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0 -g")
 
 # set(CMAKE_VERBOSE_MAKEFILE OFF)
 
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../components/yas yas)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../components/YAS yas)
 
 set(TEST_SOURCES
     ../src/main.c
