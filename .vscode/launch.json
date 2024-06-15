@@ -1,0 +1,47 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C Debug Windows",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/test/windows/build/scheduler_test.exe",
+            "args": [], 
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/test",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build-win"
+        },
+        {
+            "name": "C Debug Linux",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/test/linux/build/scheduler_test",
+            "args": [], 
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/test",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build-linux"
+        }
+    ]
+}

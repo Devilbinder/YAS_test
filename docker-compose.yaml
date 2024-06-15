@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  yas:
+    image: c_build:latest
+    container_name: yas
+    volumes:
+      - ./.vscode:/root/source/.vscode
+      - ./components:/root/source/components
+      - ./test:/root/source/test
+    command: tail -f /dev/null
+
+

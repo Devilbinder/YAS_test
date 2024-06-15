@@ -1,0 +1,4 @@
+[submodule "components/YAS"]
+	path = components/YAS
+	url = https://github.com/Devilbinder/YAS.git
+	branch = main

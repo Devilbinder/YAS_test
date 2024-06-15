@@ -1,0 +1,3 @@
+test/linux/build
+test/windows/build
+.vscode/settings.json
